@@ -1,0 +1,103 @@
+*{
+	padding: 0;
+	margin: 0;
+	/* outline: 1px solid rgb(211, 211, 211);
+	background: #6e02029d; */
+}
+
+body {
+	background-image: url("./bgsalle.png");
+	/* background: linear-gradient(0deg,rgb(49, 49, 49),grey,rgb(179, 179, 179)); */
+}
+html{
+	scroll-behavior: smooth;
+}
+
+
+.box{
+	text-align: center;
+	min-height: 100vh;
+	border-radius: 50px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.forme{
+	min-width: 10vw;
+	min-height: 100vh;
+	border-radius: 25px;	
+	background: linear-gradient(45deg,rgb(168, 255, 182), rgb(224, 224, 224), rgb(168, 255, 182));
+}
+
+.Btn {
+	background-color: aquamarine;
+	padding: 1vw 2.5vw;
+	font-size: 1rem;
+	border-radius: 25px;
+	transition: 0.6s ease;
+	border: 2px solid;
+	text-align: left;
+}
+
+.Btn span{
+	margin-left: 100px;
+	font-size: 1.2rem;
+}
+
+.Btn i{
+	font-size: 1.2rem;
+	color: rgb(48, 151, 39);
+}
+
+
+.Btn:hover{
+	transform: scale(1.05);
+	box-shadow: 0px 10px 20px rgba(27, 66, 35, 0.39);
+	background-color: rgb(54, 255, 188);
+}
+
+h1{
+	font-size:3rem;
+	text-decoration: underline;
+	/* margin-top: 6vw; */
+}
+
+.contenu{
+	margin-top: 20vw;
+	margin-bottom: auto;
+	padding: 10px;
+	border-radius: 25px;
+	backdrop-filter: blur(3px);
+	box-shadow: 0px 10px 20px black;
+	transition: 0.5s ease;
+}
+
+.contenu:hover{
+	transform: scale(1.05);
+}
+
+.conteneur-boutons{
+	margin-top: 4vw;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+@media (width>900px) {
+	.forme{
+		min-width: 7vw;
+	}
+	.forme1{
+		margin-right: 190px;
+	}
+	.forme2{
+		margin-left: 190px;
+	}
+	.contenu{
+		margin-top: 6vw;
+		padding: 50px;
+	}
+	h1{
+		font-size:6rem;
+	}
+}
